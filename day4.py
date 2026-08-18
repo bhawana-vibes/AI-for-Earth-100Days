@@ -17,3 +17,6 @@ print(df.iloc[1,2])
 print(df.iloc[2,1])
 sub_maths = df[df["subjects"] == "maths"]
 print(sub_maths)
+
+df['school'] = 'KV'
+print(df["school"])
