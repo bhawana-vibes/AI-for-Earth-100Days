@@ -23,3 +23,12 @@ print(flat_arr)
 data = np.arange(1,13)
 grid2 = data.reshape(3,4)
 print(grid2)
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+result = np.vstack((a,b))
+print(result)
+
+result1 = np.hstack((a,b))
+print(result1)
