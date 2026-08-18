@@ -6,3 +6,7 @@ temp = np.array([
 ])
 print(temp[1,1])
 print(temp[2, 2])
+grid = temp[0:2 ,0:2]
+print(grid)
+temps = temp[0:2 , 1: ]
+print(temps)
