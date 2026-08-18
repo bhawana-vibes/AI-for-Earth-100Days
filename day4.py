@@ -1,7 +1,7 @@
 import pandas as pd
 data ={
     "student" : ["aayushi" , "bhawana" , "piyush" , "shourya"],
-    "marks" : [96,78,86,96],
+    "marks" : [96,78,86,23],
     "subjects" : ["maths" , "english" , "himdi" , "science"],
     "status" :["pass" , "pass" , "pass" , "fail"]
 }
@@ -15,3 +15,5 @@ print(df[["subjects" , "status"]])
 print(df.iloc[0:2, 0:2])
 print(df.iloc[1,2])
 print(df.iloc[2,1])
+sub_maths = df[df["subjects"] == "maths"]
+print(sub_maths)
