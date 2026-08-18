@@ -32,3 +32,21 @@ print(result)
 
 result1 = np.hstack((a,b))
 print(result1)
+
+clsa = np.array([75, 80, 85])
+clsb = np.array([90, 92, 88])
+result2 = np.vstack((clsa , clsb))
+print(result2)
+
+import numpy as np
+
+Rows: Students (Riya, Aman, Priya)
+Columns: Subjects (Maths, Science, English, Hindi)
+marks = np.array([
+    [85, 78, 92, 88],   
+    [56, 62, 58, 60],   
+    [95, 90, 89, 94]    
+])
+print(marks[1, :])
+print(np.mean(marks[:, 0]))
+print(marks[marks>90])
