@@ -5,7 +5,7 @@ sns.set_theme(style="whitegrid")
 df = sns.load_dataset('tips')
 print(df.head())
 plt.figure(figsize=(6, 4))
-sns.scatterplot(data=df, x='total_bill', y='tip')
+sns.scatterplot(data=df, x='total_bill', y='tip')git status
 sns.countplot(data=df, x='day',hue='smoker' , palette='pastel')
 sns.barplot(data=df, x='day', y='total_bill'  , palette='pastel')
 sns.histplot(data=df, x='total_bill', kde=True, color='purple', bins=20)
