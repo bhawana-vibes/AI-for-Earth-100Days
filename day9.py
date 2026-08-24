@@ -10,3 +10,11 @@ print("Scaled Data (0 to 1):\n", df_scaled)
 features = np.array([2, 3])
 weights = np.array([4, 5])
 print("\nPrediction (Dot Product):", np.dot(features, weights))
+
+
+flat_features = np.array([3, 2, 1])  
+rates = np.array([10, 5, 2])         
+
+predicted_price = np.dot(flat_features, rates)
+
+print("Flat ki Predicted Price (Lakh me):", predicted_price)
