@@ -18,3 +18,19 @@ rates = np.array([10, 5, 2])
 predicted_price = np.dot(flat_features, rates)
 
 print("Flat ki Predicted Price (Lakh me):", predicted_price)
+
+import numpy as np
+X = np.array([
+    [3, 2, 1],
+    [2, 1, 2]
+])
+
+W = np.array([10, 5, 2])
+
+b = 3
+
+predictions = np.dot(X, W) + b
+
+print("--- House Price Prediction (Y = WX + b) ---")
+print("Flat 1 Price (Lakh me):", predictions[0])
+print("Flat 2 Price (Lakh me):", predictions[1])
